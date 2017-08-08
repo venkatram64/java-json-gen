@@ -44,9 +44,6 @@ public class CompositeRequestJsonGen {
 
             jobj.add("empRequestID", r.getEmpRequestID());
             jobj.add("requestDate", r.getRequestDate().toString());
-            //jobj.add("TesseraProviderID", r.getTesseraProviderID());
-            //jobj.add("TesseraProviderName", r.getTesseraProviderName());
-            //jobj.add("TesseraProductName", r.getTesseraProductName());
             jobj.add("Provider", generateProviderJson(r.getProvider()));
             jobj.add("empProductClassification", r.getEmpProductClassification());
             jobj.add("empProductSubClassification", r.getEmpProductSubClassification());
